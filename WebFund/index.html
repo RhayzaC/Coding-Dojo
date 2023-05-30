@@ -12,18 +12,18 @@
 
     <div>
         <label for="name">Nombre:</label>
-        <input type="text" name="first_name">
+        <input type="text" name="first_name" id="name">
 
         <label for="lastname">Apellido:</label>
-        <input type="text" name="first_lastname">
+        <input type="text" name="first_lastname" id="lastname">
 
         <label for="age">Edad:</label>
-        <input type="number" name="age">
+        <input type="number" name="age" id="age">
 
     </div>
 
     <label for="password">Contraseña:</label>
-    <input type="password" name="password">
+    <input type="password" name="password" id="password">
 
     <input type="date" name="dob">
     <input type="color" name="text_color">
@@ -46,14 +46,14 @@
     <div>
         <textarea name="comment" cols="20" rows="3"></textarea>
     </div>
-
+<br>
     <select name="snack">
         <option>Almonds</option>
         <option>Cheese and Crackers</option>
         <option>Pita and Hummus</option>
         <option>Pears</option>
     </select>
-
+</br>
     <form action="/process" method="post">
         <div>
             <label>Nombre: </label>
