@@ -19,7 +19,7 @@
         <input type="text" placeholder="Search...">
       </form>
       
-      <button id="boton-login">Login</button>
+      <button id="boton-login" onclick="cambiarNombre()">Login</button>
 
     </div>
     <!--Main Content-->
@@ -34,22 +34,23 @@
               <a href="#">ninjutsu</a>
             </p>
           </div>
-          <button class="likes" onclick="handleClick()">13 likes</button>
+          <button id="likes" onclick="handleClick()">13 likes</button>
         </div>
         <div class="ninja2">
           <h2 id="name2">ninja</h2>
           <h4 class="noun2">noun</h4>
           <h5 class="plural2">Plural: ninjas</h5>
           <p> A <a href="#">programmer</a> who breaks
-            down problems with <a href="#">zen</a> like focus
-            <button class="likes2">37 likes</button>
+            down problems with <a href="#">zen</a> like focus</p>
+            <button id="likes2">37 likes</button>
         </div>
       </div>
+      
       <!--Barra Derecha-->
       <div class="right-bar">
         <div class="Dojonary">
           <span class="right"> Dojonary is defined by <strong>YOU</strong></span>
-          <button class="definition">Add Definition</button>
+          <button id="definition" onclick="ocultarBoton()">Add Definition</button>
         </div>
       </div>
     </div>

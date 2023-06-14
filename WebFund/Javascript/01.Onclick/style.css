@@ -98,7 +98,7 @@
     overflow: hidde;
     gap:10px;
 }
-.likes{
+#likes{
     padding: 08px 20px;
     border-radius: none;
     border: solid 2px black;
@@ -109,7 +109,7 @@
     width: 90px;
 }
 
-.likes2{
+#likes2{
     padding: 08px 20px;
     border-radius: none;
     border: solid 2px black;
@@ -144,7 +144,7 @@
     gap: 20px;
 }
 
-.definition{
+#definition{
     padding: 08px 15px;
     border-radius: none;
     border: solid 2px black;
@@ -153,5 +153,4 @@
     cursor: pointer;
     color: black;
     width: 200px;
-    
 }
