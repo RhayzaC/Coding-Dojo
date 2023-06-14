@@ -40,7 +40,6 @@
 }
 
 .row {
-    /* TODO - what should go here? */
     display: flex;
     padding: 15px;
     vertical-align: top;
