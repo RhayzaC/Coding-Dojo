@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Gusta</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!--Nav Bar-->
+    <div class="nav-bar">
+        <h1 id="title">Network</h1>
+    </div>
+
+    <div class="main-content">
+        <h1> Your Feed</h1>
+
+        <div class="bars">
+            <!--Avatar Card-->
+            <div class="id-card">
+                <img src="user-circle.png" alt="circulo-usuario" class="avatar-m">
+                <div class="card-body">
+                    <a href="#">Add an avatar </a>
+                    <h2>James Doe</h2>
+                </div>
+            </div>
+            <!-- Right bar-->
+            <div class="side-bar">
+                <div class="users">
+                    <h3 id="name">Neil M</h3>
+                    <span id="likeCount1"> 9 </span> like (s)
+                    <button id="likeButton" onclick="incrementarLikes(1)">Like</button>
+                    <div>
+                        <p class="text1">
+                            I just set up this new discord bot, 
+                            let me know what ypou all think. <a href="#"> link </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="users">
+                    <h3 id="name">Nichole K</h3>
+                    <span id="likeCount2"> 12 </span> like (s)
+                    <button id="likeButton" onclick="incrementarLikes(2)">Like</button>
+                    <div>
+                        <p class="text1">
+                            Just finished my <a href="#">next comic</a>, check it out.
+                        </p>
+                    </div>
+                </div>
+                <div class="users">
+                    <h3 id="name">Jim R</h3>
+                    <span id="likeCount3"> 9 </span> like (s)
+                    <button id="likeButton" onclick="incrementarLikes(3)">Like</button>
+                    <div>
+                        <p class="text1">
+                            I can't stop listening to the <a href="#">new album</a>.
+                            Who else is liking it?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
