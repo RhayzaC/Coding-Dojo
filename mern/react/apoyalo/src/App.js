@@ -1,41 +1,46 @@
-import './App.css';
-import React from 'react';
+import "./App.css";
+import React, { useState } from "react";
 
-// Definición del componente PersonCard
 const PersonCard = (props) => {
+  const [age, setAge] = useState(props.age);
+
+  const handleBirthday = () => {
+    setAge(age + 1);
+  };
+
   return (
     <div className="person-card">
-      <h2> {props.lastName} {props.firstName}</h2>
-      <p>Age: {props.age}</p>
-      <p>Hair Color: {props.hairColor}</p>
+      <h2>
+        {" "}
+        {props.lastName}, {props.firstName}{" "}
+      </h2>
+      <p>Edad: {age}</p>
+      <p>Color de cabello: {props.hairColor}</p>
+      <button onClick={handleBirthday}>
+        ¡Happy Birthay for {props.firstName} {props.lastName}
+      </button>
     </div>
   );
 };
 
-// Componente principal que utiliza el componente PersonCard
 const App = () => {
   return (
     <div>
+      <PersonCard lastName="Doe" firstName="Jane" age={45} hairColor="Black" />
       <PersonCard
-        lastName="Doe,"
-        firstName="Jane"
-        age={45}
-        hairColor="Black"
-      />
-      <PersonCard
-        lastName="Smith,"
+        lastName="Smith"
         firstName="John"
         age={88}
         hairColor="Brown"
       />
       <PersonCard
-        lastName="Filmore,"
+        lastName="Filmore"
         firstName="Millard"
         age={50}
         hairColor="Brown"
       />
       <PersonCard
-        lastName="Smith,"
+        lastName="Smith"
         firstName="Maria"
         age={62}
         hairColor="Brown"
