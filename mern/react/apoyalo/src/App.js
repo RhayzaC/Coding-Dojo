@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import "./App.css";
 import React, { useState } from "react";
+=======
+import './App.css';
+import React from 'react';
+>>>>>>> 1993ca89af680cdaf8f5189381a77b8d27e140ee
 
 const PersonCard = (props) => {
   const [age, setAge] = useState(props.age);
