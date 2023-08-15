@@ -38,7 +38,7 @@ useEffect(() => {
 
 return (
     <div className="container">
-        <h1 className="my-4">Todo List</h1>
+        <h1 className="my-4">To Do List</h1>
             <div className="mb-3 d-flex align-items-center">
                 <input
                     type="text"
