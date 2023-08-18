@@ -1,7 +1,7 @@
 {
-  "name": "mongodb",
+  "name": "chistes",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "servidor.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,5 @@
     "express": "^4.18.2",
     "mongoose": "^7.4.3"
   },
-  "devDependencies": {},
   "description": ""
 }
