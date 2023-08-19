@@ -1,12 +1,11 @@
-
 import './App.css';
-import Main from './Main';
+import ProductForm from './ProductForm'
 
 function App() {
   return (
     <div className="App">
-        <Main />
         
+        <ProductForm />
     </div>
   );
 }

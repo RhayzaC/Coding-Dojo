@@ -1,15 +1,20 @@
 const express = require('express');
-//const cors = require('cors')
+const productRoutes = require('./routes/admin.routes');
+
 const app = express();
 
-//require('./server/config/mongoose.config.js'); // This is new
+// Conexión a la base de datos
+require('./config/mongoose.config'); // No necesitas el .js al final
 
-//app.use(cors());
-//app.use(express.json());
-//app.use(express.urlencoded({ extended: true })); // This is new
+// Middleware para el manejo de datos JSON y formularios
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-require('./routes/admin.routes.js')(app);
+// Rutas de productos
+app.use('/api', productRoutes);
 
-app.listen(8000, () => {
-    console.log("Listening at Port 8000")
-})
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
